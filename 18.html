@@ -64,61 +64,85 @@
 												<div class="card-title">
 													<h3 class="card-label font-weight-bolder font-size-h4 text-dark-75">Клиент</h3>
 												</div>
+												<div class="card-toolbar"><button class="btn btn-sm btn-info font-weight-bold" type="button" data-toggle="modal" data-target="#fz115">Анкета по 115-ФЗ</button></div>
 											</div>
 											<div class="card-body">
 												<ul class="nav nav-tabs nav-tabs-line">
-													<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#client_tab_1">Обзор и контакты</a></li>
+													<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#client_tab_1">Данные юр. лица</a></li>
 													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_2">Финансовая отчетность</a></li>
 													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_3">Банковские реквизиты</a></li>
-													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_4">Данные юр. лица</a></li>
-													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_5">Представитель юр. лица</a></li>
-													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_6">Контактная информация</a></li>
+													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_4">Представитель юр. лица</a></li>
+													<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#client_tab_5">Контактная информация</a></li>
 												</ul>
 												<div class="tab-content mt-5" id="clientTabs">
-													<div class="tab-pane fade show active" id="client_tab_1" role="tabpanel" aria-labelledby="client_tab_1" data-scroll="true" data-height="560">
+													<div class="tab-pane fade show active" id="client_tab_1" role="tabpanel" aria-labelledby="client_tab_1">
 														<div class="row">
 															<div class="col-lg-8">
 																<div class="form-group row">
+																	<div class="col-lg-6"><label class="col-form-label" for="fullname">Полное наименование</label><input class="form-control" id="fullname" type="text" value="Общество с ограниченной ответственностью «Альфа»" disabled></div>
 																	<div class="col-lg-6"><label class="col-form-label" for="name">Наименование</label><input class="form-control" id="name" type="text" value="ООО «Альфа»" disabled></div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-6"><label class="col-form-label" for="foreign-name">Наименование на иностранном языке</label><input class="form-control" id="foreign-name" type="text" value="Alfa Gbht" disabled></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="foreign-short-name">Сокращённое наименование на иностранном языке</label><input class="form-control" id="foreign-short-name" type="text" value="Alfa" disabled></div>
+																</div>
+																<div class="form-group row">
 																	<div class="col-lg-6"><label class="col-form-label" for="inn">ИНН</label><input class="form-control" id="inn" type="text" value="123456789" disabled></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="kpp">КПП</label><input class="form-control" id="kpp" type="text" value="272000000" disabled></div>
 																</div>
 																<div class="form-group row">
-																	<div class="col-lg-6"><label class="col-form-label" for="sum">Контактное лицо</label><input class="form-control" id="sum" type="text" value="Пушкин Александр Сергеевич"></div>
-																	<div class="col-lg-6"><label class="col-form-label" for="phone">Номер телефона</label><input class="form-control" id="phone" type="tel" value="+7 (950) 123-45-67"></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="ogrn">ОГРН</label><input class="form-control" id="ogrn" type="text" value="12027000000000" disabled></div>
 																</div>
 																<div class="form-group row">
-																	<div class="col-lg-6"><label class="col-form-label" for="email">E-mail</label><input class="form-control" id="email" type="email" value="mail@example.com"></div>
-																	<div class="col-lg-6"><label class="col-form-label" for="region">Регион</label><select class="form-control" id="region">
-																			<option>выберите регион</option>
-																			<option>Центральный федеральный округ</option>
-																			<option>Северо-Западный федеральный округ</option>
-																			<option>Южный федеральный округ</option>
-																			<option>Приволжский федеральный округ</option>
-																			<option>Уральский федеральный округ</option>
-																			<option>Сибирский федеральный округ</option>
-																			<option>Дальневосточный федеральный округ</option>
-																		</select></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="okved">Основной вид деятельности (ОКВЭД)</label><input class="form-control" id="okved" type="text" value="41.20" disabled>
+																		<div class="form-text text-muted">Строительство жилых и нежилых зданий</div>
+																	</div>
+																	<div class="col-lg-6"><label class="col-form-label" for="head">Генеральный директор:</label><input class="form-control" id="head" type="text" value="Иванов Иван Иванович" disabled></div>
 																</div>
 																<div class="form-group row">
-																	<div class="col-lg-6"><label class="col-form-label" for="time">Время клиента</label><select class="form-control" id="time">
-																			<option>выберите время</option>
-																			<option>GMT-3</option>
-																			<option>GMT-2</option>
-																			<option>GMT-1</option>
-																			<option>GMT+0</option>
-																			<option>GMT+1</option>
-																			<option>GMT+2</option>
-																			<option>GMT+3</option>
-																		</select></div>
-																	<div class="col-lg-6"><label class="col-form-label" for="underwriter">Андеррайтер</label><input class="form-control" id="underwriter" type="text" value="Белозёрова Венера Викторовна" disabled></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="capital">Заявленный уставный капитал (₽):</label><input class="form-control" id="capital" type="text" value="10 000" disabled>
+																		<div class="checkbox-inline mt-4"><label class="checkbox"><input type="checkbox"><span></span>Оплачен полностью</label></div>
+																	</div>
+																	<div class="col-lg-6"><label class="col-form-label" for="payment">Оплаченный уставный капитал (₽):</label><input class="form-control" id="payment" type="text" value="10 000" disabled></div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-6"><label class="col-form-label" for="registration">Кем зарегистрирован:</label><input class="form-control" id="registration" type="text" value="Инспекция Федеральной налоговой службы по Советскому району г. Урюпинска" disabled></div>
+																	<div class="col-lg-6"><label class="col-form-label" for="date">Дата создания компании:</label><input class="form-control" id="date" type="text" value="2020-08-26" disabled></div>
+																</div>
+																<div class="form-group row">
+																	<div class="col-lg-6"><label class="col-form-label" for="address">Адрес регистрирующего органа:</label><input class="form-control" id="address" type="text" value="г. Урюпинска, ул. Пушкина, д. 1" disabled></div>
 																</div>
 															</div>
 															<div class="col-lg-4">
+																<div class="form-group"><label class="col-form-label" for="sum">Контактное лицо</label><input class="form-control" id="sum" type="text" value="Пушкин Александр Сергеевич"></div>
+																<div class="form-group"><label class="col-form-label" for="phone">Номер телефона</label><input class="form-control" id="phone" type="tel" value="+7 (950) 123-45-67"></div>
+																<div class="form-group"><label class="col-form-label" for="email">E-mail</label><input class="form-control" id="email" type="email" value="mail@example.com"></div>
+																<div class="form-group"><label class="col-form-label" for="region">Регион</label><select class="form-control" id="region">
+																		<option>выберите регион</option>
+																		<option>Центральный федеральный округ</option>
+																		<option>Северо-Западный федеральный округ</option>
+																		<option>Южный федеральный округ</option>
+																		<option>Приволжский федеральный округ</option>
+																		<option>Уральский федеральный округ</option>
+																		<option>Сибирский федеральный округ</option>
+																		<option>Дальневосточный федеральный округ</option>
+																	</select></div>
+																<div class="form-group"><label class="col-form-label" for="time">Время клиента</label><select class="form-control" id="time">
+																		<option>выберите время</option>
+																		<option>GMT-3</option>
+																		<option>GMT-2</option>
+																		<option>GMT-1</option>
+																		<option>GMT+0</option>
+																		<option>GMT+1</option>
+																		<option>GMT+2</option>
+																		<option>GMT+3</option>
+																	</select></div>
+																<div class="form-group"><label class="col-form-label" for="underwriter">Андеррайтер</label><input class="form-control" id="underwriter" type="text" value="Белозёрова Венера Викторовна" disabled></div>
 																<div class="form-group"><label class="col-form-label" for="comment">Комментарий</label><textarea class="form-control" id="comment" rows="8"></textarea></div>
 															</div>
 														</div>
 													</div>
-													<div class="tab-pane fade" id="client_tab_2" role="tabpanel" aria-labelledby="client_tab_2" data-scroll="true" data-height="560">
+													<div class="tab-pane fade" id="client_tab_2" role="tabpanel" aria-labelledby="client_tab_2">
 														<div class="h4 text-dark mb-4">Заголовок</div>
 														<div class="accordion accordion-solid accordion-toggle-plus" id="accordion">
 															<div class="card">
@@ -249,10 +273,71 @@
 															<div class="d-flex justify-content-center bg-light rounded p-4 my-2"><span>Утверждение: <span class="font-weight-500 text-danger">Нет</span></span></div>
 														</div>
 													</div>
-													<div class="tab-pane fade" id="client_tab_3" role="tabpanel" aria-labelledby="client_tab_3" data-scroll="true" data-height="560">Банковские реквизиты</div>
-													<div class="tab-pane fade" id="client_tab_4" role="tabpanel" aria-labelledby="client_tab_4" data-scroll="true" data-height="560">Данные юр. лица</div>
-													<div class="tab-pane fade" id="client_tab_5" role="tabpanel" aria-labelledby="client_tab_5" data-scroll="true" data-height="560">Представитель юр. лица</div>
-													<div class="tab-pane fade" id="client_tab_6" role="tabpanel" aria-labelledby="client_tab_6" data-scroll="true" data-height="560">Контактная информация</div>
+													<div class="tab-pane fade" id="client_tab_3" role="tabpanel" aria-labelledby="client_tab_3">Банковские реквизиты</div>
+													<div class="tab-pane fade" id="client_tab_4" role="tabpanel" aria-labelledby="client_tab_4">
+														<div class="row mb-4">
+															<div class="col-12">
+																<div class="font-weight-bold font-size-h4 text-dark-75 mb-2">Представитель юридического лица</div>
+																<div class="table-responsive">
+																	<table class="table">
+																		<thead class="thead-light">
+																			<tr>
+																				<th scope="col">ФИО</th>
+																				<th scope="col">Дата последнего изменения в ЕГРЮЛ</th>
+																				<th scope="col">Дата последнего изменения ВБГ</th>
+																				<th scope="col">Скан паспорта</th>
+																				<th scope="col">ЕИО</th>
+																				<th scope="col">Участник с долей УК</th>
+																				<th scope="col">Редактировать</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="align-middle">Пушкин Александр Сергеевич</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-primary btn-sm" type="button">Скачать</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																				<td class="align-middle">✅</td>
+																				<td class="align-middle">25%</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-success btn-sm" type="button" data-toggle="modal" data-target="#editRepr">Открыть</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="align-middle">Лермонтов Михаил Юрьевич</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-primary btn-sm" type="button">Скачать</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																				<td class="align-middle">✅</td>
+																				<td class="align-middle">50%</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-success btn-sm" type="button" data-toggle="modal" data-target="#editRepr">Открыть</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="align-middle">Толстой Лев Николаевич</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">32.03.2021</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-primary btn-sm" type="button">Скачать</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																				<td class="align-middle">➖</td>
+																				<td class="align-middle">25%</td>
+																				<td class="align-middle">
+																					<div class="btn-group" role="group"><button class="btn btn-light-success btn-sm" type="button" data-toggle="modal" data-target="#editRepr">Открыть</button><button class="btn btn-light-danger btn-icon btn-sm" type="button" title="Удалить"><i class="flaticon2-trash icon-nm"></i></button></div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="client_tab_5" role="tabpanel" aria-labelledby="client_tab_5">Контактная информация</div>
 												</div>
 											</div>
 										</div>
@@ -260,6 +345,173 @@
 								</div>
 							</div>
 						</div>
+						<div class="modal fade" id="fz115" tabindex="-1" role="dialog" aria-labelledby="fz115" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+								<form class="form modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Анкета по 115-ФЗ</h5>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-lg-4">
+												<h5>Разделы анкеты</h5>
+												<div class="d-flex flex-column mt-4">
+													<div class="d-flex flex-column px-4 py-2 bg-success-o-20 rounded">
+														<div class="text-dark-50 font-weight-bold">Общие сведения о компании</div>
+														<div class="text-dark-75 mt-1 font-weight-bolder font-size-lg">100 %</div>
+													</div>
+													<div class="d-flex flex-column mt-4 px-4 py-2 bg-success-o-20 rounded">
+														<div class="text-dark-50 font-weight-bold">Обязательства клиента</div>
+														<div class="text-dark-75 mt-1 font-weight-bolder font-size-lg">100 %</div>
+													</div>
+													<div class="d-flex flex-column mt-4 px-4 py-2 bg-success-o-20 rounded">
+														<div class="text-dark-50 font-weight-bold">Сведения о финансовом положении</div>
+														<div class="text-dark-75 mt-1 font-weight-bolder font-size-lg">100 %</div>
+													</div>
+													<div class="d-flex flex-column mt-4 px-4 py-2 bg-success-o-20 rounded">
+														<div class="text-dark-50 font-weight-bold">Сведения о структуре организации</div>
+														<div class="text-dark-75 mt-1 font-weight-bolder font-size-lg">100 %</div>
+													</div>
+													<div class="d-flex flex-column mt-4 px-4 py-2 bg-gray-200 rounded">
+														<div class="text-dark-50 font-weight-bold">Сведения о деловой репутации</div>
+														<div class="text-dark-75 mt-1 font-weight-bolder font-size-lg">50 %</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-8 mt-16 mt-lg-0">
+												<div class="d-flex flex-column px-4 py-2 bg-primary-o-50 rounded mb-6">
+													<h4>Общие сведения о компании</h4>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label" for="field1">Заголовок текста</label>
+													<div class="col-lg-8">
+														<p>Но высококачественный прототип будущего проекта говорит о возможностях новых принципов формирования материально-технической и кадровой базы.</p>
+													</div>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label" for="field1">Заголовок поля ввода</label>
+													<div class="col-lg-8"><input class="form-control" id="field1" type="text" value="Информация"></div>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label">Заголовок селекта</label>
+													<div class="col-lg-8"><select class="form-control">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+														</select></div>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label">Заголовок радио</label>
+													<div class="col-lg-8 col-form-label">
+														<div class="radio-inline"><label class="radio radio-primary"><input type="radio" name="radio1" checked="checked"><span></span>Да</label><label class="radio radio-primary"><input type="radio" name="radio1"><span></span>Нет</label><label class="radio radio-primary radio-disabled"><input type="radio" name="radio1"><span></span>Не знаю</label></div><span class="form-text text-muted">Вспомогательный текст</span>
+													</div>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label">Чекбоксы</label>
+													<div class="col-8 col-form-label">
+														<div class="checkbox-list"><label class="checkbox"><input type="checkbox" checked="checked" name="Checkbox1"><span></span>Название чекбокса 1</label><label class="checkbox"><input type="checkbox" name="Checkbox1"><span></span>Название чекбокса 2</label><label class="checkbox checkbox-disabled"><input type="checkbox" disabled="disabled" name="Checkbox1"><span></span>Название чекбокса 3</label></div>
+													</div>
+												</div>
+												<div class="d-flex flex-column px-4 py-2 bg-primary-o-50 rounded mb-6">
+													<h4>Обязательства клиента</h4>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label" for="field2">Заголовок поля ввода</label>
+													<div class="col-lg-8"><input class="form-control" id="field2" type="text" value="Информация"></div>
+												</div>
+												<div class="form-group row"><label class="col-lg-4 col-form-label">Заголовок селекта</label>
+													<div class="col-lg-8"><select class="form-control">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+														</select></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer"><button class="btn btn-light-primary font-weight-bold" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-primary font-weight-bold" type="button">Сохранить</button></div>
+								</form>
+							</div>
+						</div>
+						<div class="modal fade" id="editRepr" tabindex="-1" role="dialog" aria-labelledby="editRepr" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Редактировать представителя</h5>
+									</div>
+									<div class="modal-body">
+										<form class="form">
+											<div>
+												<h4>Основные сведения</h4>
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group mb-4"><label class="col-form-label" for="lastname">Фамилия</label><input class="form-control" id="lastname" type="text" value="Иванов"></div>
+														<div class="form-group mb-4"><label class="col-form-label" for="firstname">Имя</label><input class="form-control" id="firstname" type="text" value="Иван"></div>
+														<div class="form-group"><label class="col-form-label" for="fathername">Отчество</label><input class="form-control" id="fathername" type="text" value="Иванович"></div>
+														<div class="form-group">
+															<div class="checkbox-inline"><label class="checkbox align-items-start"><input type="checkbox" name="Check1"><span></span>Является иностранным публичным должностным лицом, должностным лицом публичных международных организаций, а также лицом, замещающим (занимающим) государственные должности РФ, должности членов Совета директоров ЦБ РФ, должности федеральной государственной службы, назначение на которые и освобождение от которых государственных корпорациях и иных организациях, созданных РФ на основании федеральных законов, включенные в перечни должностей, определяемые Президентом РФ</label></div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="form-group mb-4"><label class="col-form-label" for="inn2">ИНН</label><input class="form-control" id="inn2" type="text" value="123456789"></div>
+														<div class="form-group mb-4"><label class="col-form-label" for="snils">Снилс</label><input class="form-control" id="snils" type="text" value="123456789"></div>
+														<div class="form-group"><label class="col-form-label" for="number">Номер телефона</label><input class="form-control" id="number" type="tel" placeholder="+79501234567"></div>
+														<div class="form-group">
+															<div class="checkbox-inline"><label class="checkbox align-items-start"><input type="checkbox" name="Check1"><span></span>Является родственником по отношению к иностранным публичным должностным лицам, должностным лицам публичных международных организаций, а также лицам, замещающим (занимающим) государственные должности РФ, должности членов Совета директоров ЦБ РФ, должности федеральной государственной службы, назначение на которые и освобождение от которых осуществляются Президентом РФ или Правительством РФ, должности в ЦБ РФ, государственных корпорациях и иных организациях, созданных РФ на основании федеральных законов, включенные в перечни должностей, определяемые Президентом РФ</label></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="mt-12">
+												<h4>Роль в организации</h4>
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="form-group mb-4"><label class="col-form-label" for="share">Доля в уставном капитале</label><input class="form-control" id="share" type="text" value="100"></div>
+														<div class="form-group mb-4"><label class="col-form-label" for="admission">Основание признания лица</label><input class="form-control" id="admission" type="text" value="Прямое или косвенное владение долей более 25%"></div>
+														<div class="form-group row mb-0"><label class="col-lg-6 col-form-label">Единоличный исп. орган:</label>
+															<div class="col-6 col-form-label">
+																<div class="radio-inline"><label class="radio radio-primary"><input type="radio" name="radio3" checked="checked"><span></span>Да</label><label class="radio radio-primary"><input type="radio" name="radio3"><span></span>Нет</label></div>
+															</div>
+														</div>
+														<div class="form-group row mb-0"><label class="col-lg-6 col-form-label">Акционер с долей не менее 1%</label>
+															<div class="col-6 col-form-label">
+																<div class="radio-inline"><label class="radio radio-primary"><input type="radio" name="radio1" checked="checked"><span></span>Да</label><label class="radio radio-primary"><input type="radio" name="radio1"><span></span>Нет</label></div>
+															</div>
+														</div>
+														<div class="form-group row mb-0"><label class="col-lg-6 col-form-label">Бенефициар / Доля в УК (%)</label>
+															<div class="col-6 col-form-label">
+																<div class="radio-inline"><label class="radio radio-primary"><input type="radio" name="radio2" checked="checked"><span></span>Да</label><label class="radio radio-primary"><input type="radio" name="radio2"><span></span>Нет</label></div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="form-group mb-4"><label class="col-form-label" for="place">Должнсть физ. лица</label><input class="form-control" id="place" type="text" value="Генеральный директор"></div>
+														<div class="form-group"><label class="col-form-label" for="datePlace">Дата назначения на должность</label>
+															<div class="input-daterange input-group" id="requests-date"><input class="form-control" id="datePlace" type="text" name="start"></div>
+														</div>
+														<div class="form-group mb-4"><label class="col-form-label" for="ogrnip">ОГРНИП</label><input class="form-control" id="ogrnip" type="text" value="123456789"></div>
+													</div>
+												</div>
+											</div>
+											<div class="mt-12">
+												<h4>Паспортные данные</h4>
+												<div class="row">
+													<div class="col-12">
+														<div class="form-group mb-0"><label class="col-form-label">Удостоверение личности</label>
+															<div class="col-form-label">
+																<div class="radio-inline"><label class="radio radio-primary"><input type="radio" name="radio3" checked="checked"><span></span>Паспорт РФ</label><label class="radio radio-primary"><input type="radio" name="radio3"><span></span>Другой документ РФ</label><label class="radio radio-primary"><input type="radio" name="radio3"><span></span>Я нерезидент РФ</label></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="mt-12">
+												<h4>Адрес регистрации</h4>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer"><button class="btn btn-light-primary font-weight-bold" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-primary font-weight-bold" type="button">Сохранить</button></div>
+								</div>
+							</div>
+						</div><script src="assets/js/pages/features/forms/widgets/bootstrap-datepicker.js"></script>
 					</div>
 					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
 						<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
@@ -270,6 +522,6 @@
 				</div>
 			</div>
 		</div><script>let KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3E97FF", "secondary": "#E5EAEE", "success": "#08D1AD", "info": "#844AFF", "warning": "#F5CE01", "danger": "#FF3D60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#DEEDFF", "secondary": "#EBEDF3", "success": "#D6FBF4", "info": "#6125E1", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Inter" };
-</script><script src="assets/plugins/global/plugins.bundle.js"></script><script src="assets/js/scripts.bundle.js"></script>
+</script><script src="assets/plugins/global/plugins.bundle.js"></script><script src="assets/js/scripts.bundle.js"></script><script src="assets/js/pages/features/forms/widgets/bootstrap-datepicker.js"></script>
 	</body>
 </html>
